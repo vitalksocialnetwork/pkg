@@ -6,6 +6,6 @@ type ConsulAgent interface {
 	AcquireSession(string) (bool, error)
 	RenewSession() error
 	DestroySession() error
-	GGetAddressByKey(string) (string, error)
+	GetAddressByKey(string) (string, error)
 	CloseAgent() error
 }
